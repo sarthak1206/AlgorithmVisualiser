@@ -1,0 +1,27 @@
+<pre style='color:#000000;background:#FFF9F4;'><span style='color:#696969; '># Python program for implementation of Bubble Sort</span>
+<span style='color:#800000; font-weight:bold; '>def</span> bubbleSort<span style='color:#808030; '>(</span>arr<span style='color:#808030; '>)</span><span style='color:#808030; '>:</span>
+    n <span style='color:#808030; '>=</span> <span style='color:#400000; '>len</span><span style='color:#808030; '>(</span>arr<span style='color:#808030; '>)</span>
+
+    <span style='color:#800000; font-weight:bold; '>for</span> i <span style='color:#800000; font-weight:bold; '>in</span> <span style='color:#400000; '>range</span><span style='color:#808030; '>(</span>n<span style='color:#808030; '>)</span><span style='color:#808030; '>:</span>
+
+        flag <span style='color:#808030; '>=</span> <span style='color:#008c00; '>0</span>
+        <span style='color:#800000; font-weight:bold; '>for</span> j <span style='color:#800000; font-weight:bold; '>in</span> <span style='color:#400000; '>range</span><span style='color:#808030; '>(</span><span style='color:#008c00; '>0</span><span style='color:#808030; '>,</span> n<span style='color:#44aadd; '>-</span>i<span style='color:#44aadd; '>-</span><span style='color:#008c00; '>1</span><span style='color:#808030; '>)</span><span style='color:#808030; '>:</span>
+            <span style='color:#800000; font-weight:bold; '>if</span> arr<span style='color:#808030; '>[</span>j<span style='color:#808030; '>]</span> <span style='color:#44aadd; '>></span> arr<span style='color:#808030; '>[</span>j<span style='color:#44aadd; '>+</span><span style='color:#008c00; '>1</span><span style='color:#808030; '>]</span><span style='color:#808030; '>:</span>
+                arr<span style='color:#808030; '>[</span>j<span style='color:#808030; '>]</span><span style='color:#808030; '>,</span> arr<span style='color:#808030; '>[</span>j<span style='color:#44aadd; '>+</span><span style='color:#008c00; '>1</span><span style='color:#808030; '>]</span> <span style='color:#808030; '>=</span> arr<span style='color:#808030; '>[</span>j<span style='color:#44aadd; '>+</span><span style='color:#008c00; '>1</span><span style='color:#808030; '>]</span><span style='color:#808030; '>,</span> arr<span style='color:#808030; '>[</span>j<span style='color:#808030; '>]</span>
+                flag <span style='color:#808030; '>=</span> <span style='color:#008c00; '>1</span>
+
+        <span style='color:#800000; font-weight:bold; '>if</span> flag <span style='color:#44aadd; '>==</span> <span style='color:#008c00; '>0</span><span style='color:#808030; '>:</span>
+            <span style='color:#800000; font-weight:bold; '>break</span>
+
+
+
+<span style='color:#696969; '># Driver code to test above</span>
+arr <span style='color:#808030; '>=</span> <span style='color:#808030; '>[</span><span style='color:#008c00; '>4</span><span style='color:#808030; '>,</span> <span style='color:#008c00; '>3</span><span style='color:#808030; '>,</span> <span style='color:#008c00; '>5</span><span style='color:#808030; '>,</span> <span style='color:#008c00; '>1</span><span style='color:#808030; '>,</span> <span style='color:#008c00; '>2</span><span style='color:#808030; '>]</span>
+
+bubbleSort<span style='color:#808030; '>(</span>arr<span style='color:#808030; '>)</span>
+
+<span style='color:#800000; font-weight:bold; '>print</span><span style='color:#808030; '>(</span><span style='color:#0000e6; '>"Sorted array: </span><span style='color:#0f69ff; '>\n</span><span style='color:#0000e6; '>"</span><span style='color:#808030; '>)</span>
+<span style='color:#800000; font-weight:bold; '>for</span> i <span style='color:#800000; font-weight:bold; '>in</span> <span style='color:#400000; '>range</span><span style='color:#808030; '>(</span><span style='color:#400000; '>len</span><span style='color:#808030; '>(</span>arr<span style='color:#808030; '>)</span><span style='color:#808030; '>)</span><span style='color:#808030; '>:</span>
+    <span style='color:#800000; font-weight:bold; '>print</span><span style='color:#808030; '>(</span><span style='color:#0000e6; '>"%d"</span> <span style='color:#44aadd; '>%</span> arr<span style='color:#808030; '>[</span>i<span style='color:#808030; '>]</span><span style='color:#808030; '>,</span> end<span style='color:#808030; '>=</span><span style='color:#0000e6; '>" "</span><span style='color:#808030; '>)</span>
+</pre>
+<!--Created using ToHtml.com on 2022-08-29 18:11:56 UTC -->

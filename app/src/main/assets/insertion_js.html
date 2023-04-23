@@ -1,0 +1,42 @@
+<pre style='color:#000000;background:#FFF9F4;'><span style='color:#808030; '>&lt;</span>script<span style='color:#808030; '>></span>
+
+<span style='color:#696969; '>// Main function for implementing insertion sort.</span>
+<span style='color:#800000; font-weight:bold; '>function</span> insertionSort<span style='color:#808030; '>(</span>arr<span style='color:#808030; '>,</span> n<span style='color:#808030; '>)</span>
+<span style='color:#800080; '>{</span>
+
+    <span style='color:#800000; font-weight:bold; '>for</span> <span style='color:#808030; '>(</span><span style='color:#800000; font-weight:bold; '>var</span> i <span style='color:#808030; '>=</span> <span style='color:#008c00; '>1</span><span style='color:#800080; '>;</span> i <span style='color:#808030; '>&lt;</span> n<span style='color:#800080; '>;</span> i<span style='color:#808030; '>++</span><span style='color:#808030; '>)</span>
+    <span style='color:#800080; '>{</span>
+        <span style='color:#800000; font-weight:bold; '>var</span> key <span style='color:#808030; '>=</span> arr<span style='color:#808030; '>[</span>i<span style='color:#808030; '>]</span><span style='color:#800080; '>;</span>
+        <span style='color:#800000; font-weight:bold; '>var</span> j <span style='color:#808030; '>=</span> i <span style='color:#808030; '>-</span> <span style='color:#008c00; '>1</span><span style='color:#800080; '>;</span>
+
+        <span style='color:#696969; '>/* Move all elements greater than the current ones. */</span>
+        <span style='color:#800000; font-weight:bold; '>while</span> <span style='color:#808030; '>(</span>j <span style='color:#808030; '>>=</span> <span style='color:#008c00; '>0</span> <span style='color:#808030; '>&amp;&amp;</span> arr<span style='color:#808030; '>[</span>j<span style='color:#808030; '>]</span> <span style='color:#808030; '>></span> key<span style='color:#808030; '>)</span>
+        <span style='color:#800080; '>{</span>
+            arr<span style='color:#808030; '>[</span>j <span style='color:#808030; '>+</span> <span style='color:#008c00; '>1</span><span style='color:#808030; '>]</span> <span style='color:#808030; '>=</span> arr<span style='color:#808030; '>[</span>j<span style='color:#808030; '>]</span><span style='color:#800080; '>;</span>
+            j <span style='color:#808030; '>=</span> j <span style='color:#808030; '>-</span> <span style='color:#008c00; '>1</span><span style='color:#800080; '>;</span>
+        <span style='color:#800080; '>}</span>
+        arr<span style='color:#808030; '>[</span>j <span style='color:#808030; '>+</span> <span style='color:#008c00; '>1</span><span style='color:#808030; '>]</span> <span style='color:#808030; '>=</span> key<span style='color:#800080; '>;</span>
+    <span style='color:#800080; '>}</span>
+<span style='color:#800080; '>}</span>
+
+<span style='color:#696969; '>// Function for printing an array. </span>
+<span style='color:#800000; font-weight:bold; '>function</span> printArray<span style='color:#808030; '>(</span>arr<span style='color:#808030; '>,</span> n<span style='color:#808030; '>)</span>
+<span style='color:#800080; '>{</span>
+    <span style='color:#800000; font-weight:bold; '>for</span> <span style='color:#808030; '>(</span><span style='color:#800000; font-weight:bold; '>var</span> i <span style='color:#808030; '>=</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span> i <span style='color:#808030; '>&lt;</span> n<span style='color:#800080; '>;</span> i<span style='color:#808030; '>++</span><span style='color:#808030; '>)</span>
+        document<span style='color:#808030; '>.</span>write<span style='color:#808030; '>(</span>arr<span style='color:#808030; '>[</span>i<span style='color:#808030; '>]</span> <span style='color:#808030; '>+</span> <span style='color:#800000; '>"</span><span style='color:#0000e6; '> </span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+    document<span style='color:#808030; '>.</span>write<span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>&lt;br></span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+<span style='color:#800080; '>}</span>
+
+
+<span style='color:#800000; font-weight:bold; '>let</span> arr <span style='color:#808030; '>=</span> <span style='color:#808030; '>[</span><span style='color:#008c00; '>4</span><span style='color:#808030; '>,</span> <span style='color:#008c00; '>3</span><span style='color:#808030; '>,</span> <span style='color:#008c00; '>5</span><span style='color:#808030; '>,</span> <span style='color:#008c00; '>1</span><span style='color:#808030; '>,</span> <span style='color:#008c00; '>2</span> <span style='color:#808030; '>]</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>let</span> n <span style='color:#808030; '>=</span> arr<span style='color:#808030; '>.</span><span style='color:#800000; font-weight:bold; '>length</span><span style='color:#800080; '>;</span>
+
+insertionSort<span style='color:#808030; '>(</span>arr<span style='color:#808030; '>,</span> n<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+
+document<span style='color:#808030; '>.</span>write<span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>Sorted Array: </span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+printArray<span style='color:#808030; '>(</span>arr<span style='color:#808030; '>,</span> n<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+
+
+<span style='color:#808030; '>&lt;</span><span style='color:#808030; '>/</span>script<span style='color:#808030; '>></span>
+</pre>
+<!--Created using ToHtml.com on 2022-08-30 17:09:09 UTC -->
