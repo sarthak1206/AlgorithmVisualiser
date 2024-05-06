@@ -1,6 +1,6 @@
 img[alt=screenshot] { width: 200px; }
 
-![screenshot](https://github.com/sarthak1206/AlgorithmVisualiser/assets/66436609/e980398b-83c0-4513-952c-3c7b1a37eee8=640x360)
+![screenshot](https://github.com/sarthak1206/AlgorithmVisualiser/assets/66436609/e980398b-83c0-4513-952c-3c7b1a37eee8 =640x360)
 
 
 ![Screenshot_20221109_000652](https://github.com/sarthak1206/AlgorithmVisualiser/assets/66436609/0bcc6a19-b259-4d0d-bb85-67a4d26c3388)
