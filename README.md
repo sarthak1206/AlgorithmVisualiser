@@ -32,7 +32,7 @@ This repository contains an Android application for visualizing various algorith
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/algo-visualizer-android.git
+git clone https://github.com/sarthak1206/AlgorithmVisualiser.git
 ```
 
 Open the project in Android Studio and run it on an Android device or emulator.
